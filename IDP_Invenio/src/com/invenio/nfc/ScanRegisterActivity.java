@@ -41,7 +41,7 @@ public class ScanRegisterActivity extends Activity {
 					// add message
 					alertDialog.setMessage("Click 'Yes' to register:\n\nID:"
 							+ RegisterAssetActivity.getRegistrationId()
-							+ "\nUsed spoon");
+							+ "\nChair");
 
 					// Setting Positive "Yes" Button
 					alertDialog.setPositiveButton("Yes",
