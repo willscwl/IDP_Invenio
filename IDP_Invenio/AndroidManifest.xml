@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.invenio.nfc"
+    android:versionCode="2"
+    android:versionName="2" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo" >
+        <activity android:name="com.example.ServicesViewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ParentActivity" />
+        </activity>
+
+        <!-- Main activity -->
+        <activity
+            android:name="com.invenio.nfc.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+        </activity>
+
+        <!-- Splash screen -->
+        <activity
+            android:name="com.invenio.nfc.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- About -->
+        <activity
+            android:name="com.invenio.nfc.AboutActivity"
+            android:label="@string/about"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo" >
+            <intent-filter>
+                <action android:name="android.intent.action.ABOUTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Menu Screen -->
+        <activity
+            android:name="com.invenio.nfc.MainMenuActivity"
+            android:icon="@drawable/home"
+            android:label="@string/home_page_name"
+            android:theme="@android:style/Theme.Holo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINMENUACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Register Asset Screen -->
+        <activity
+            android:name="com.invenio.nfc.RegisterAssetActivity"
+            android:icon="@drawable/registerasset_tiny"
+            android:label="@string/register_asset_title"
+            android:theme="@android:style/Theme.Holo" >
+            <intent-filter>
+                <action android:name="android.intent.action.REGISTERASSETACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Scan Register Asset Screen -->
+        <activity
+            android:name="com.invenio.nfc.ScanRegisterActivity"
+            android:icon="@drawable/registerasset_tiny"
+            android:label="@string/register_asset_title"
+            android:theme="@android:style/Theme.Holo" >
+            <intent-filter>
+                <action android:name="android.intent.action.SCANREGISTERACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Confirm Register Asset Screen -->
+        <activity
+            android:name="com.invenio.nfc.ConfirmRegisterActivity"
+            android:icon="@drawable/registerasset_tiny"
+            android:label="@string/register_asset_title"
+            android:theme="@android:style/Theme.Holo" >
+            <intent-filter>
+                <action android:name="android.intent.action.CONFIRMREGISTERACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Register Success Screen -->
+        <activity
+            android:name="com.invenio.nfc.RegisterSuccessActivity"
+            android:icon="@drawable/registerasset_tiny"
+            android:label="@string/register_asset_title"
+            android:theme="@android:style/Theme.Holo" >
+            <intent-filter>
+                <action android:name="android.intent.action.REGISTERSUCCESSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Loan Asset SubMenu Screen -->
+        <activity
+            android:name="com.invenio.nfc.LoanSubMenuActivity"
+            android:icon="@drawable/loanasset_tiny"
+            android:label="@string/loan_asset_title"
+            android:theme="@android:style/Theme.Holo" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOANSUBMENUACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Loan Single Asset Screen -->
+        <activity
+            android:name="com.invenio.nfc.LoanSingleItemActivity"
+            android:icon="@drawable/loanasset_tiny"
+            android:label="@string/loan_asset_title"
+            android:theme="@android:style/Theme.Holo" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOANSINGLEITEMACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Loan Multiple Assets Screen -->
+        <activity
+            android:name="com.invenio.nfc.LoanMultipleItemsActivity"
+            android:icon="@drawable/loanasset_tiny"
+            android:label="@string/loan_asset_title"
+            android:theme="@android:style/Theme.Holo" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOANMULTIPLEITEMSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
