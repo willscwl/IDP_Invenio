@@ -197,7 +197,7 @@ public class LoanItemLogic {
 
 				});
 
-		alertDialog.setNegativeButton("No",
+		alertDialog.setNegativeButton("Cancel",
 				new DialogInterface.OnClickListener() {
 
 					@Override
