@@ -7,6 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    
     tools:context=".Ld" >
 
     <ScrollView
@@ -26,208 +27,157 @@
                 android:layout_height="fill_parent"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="Enter Asset Details:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#6495ED" />
+
+                <EditText
+                    android:id="@+id/aloc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Manufacturer"
+                    android:textColor="#6495ED" />
+
+                <EditText
+                    android:id="@+id/tp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Serial No."
+                    android:textColor="#6495ED" />
+
+                <EditText
+                    android:id="@+id/re"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Model"
+                    android:textColor="#6495ED" />
+
+                <EditText
+                    android:id="@+id/EditText07"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="NXP Tag No."
+                    android:textColor="#6495ED" />
+
+                <EditText
+                    android:id="@+id/hd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Last Calibration Date"
+                    android:inputType="date"
+                    android:textColor="#6495ED" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:hint="Calibration Expiry Date"
+                    android:inputType="date"
+                    android:textColor="#6495ED" />
+
+                <EditText
+                    android:id="@+id/mn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Equipment Location"
+                    android:textColor="#6495ED" />
+
+                <EditText
+                    android:id="@+id/ina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Person In-Charge"
+                    android:textColor="#6495ED" />
+
+                <EditText
+                    android:id="@+id/msn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Contact Info. of In-Charge"
+                    android:textColor="#6495ED" />
+
+                <EditText
+                    android:id="@+id/rem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Hardware Description"
+                    android:inputType="textMultiLine"
+                    android:textColor="#6495ED" />
 
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:background="@android:color/black" >
+                    android:layout_weight="1" >
 
                     <TextView
-                        android:id="@+id/textView1"
-                        android:layout_width="match_parent"
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Asset ID:"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Medium Text"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Asset Name:"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                    <EditText
-                        android:id="@+id/editText2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Date of Purchase:"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                    <EditText
-                        android:id="@+id/editText3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="date" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-
-                    <TextView
-                        android:id="@+id/TextView01"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Warranty (Years):"
+                        android:text="Calibration Required?"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <Spinner
                         android:id="@+id/spinner1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" 
-                        android:entries="@array/warranty_array"
-                		android:prompt="@string/warranty_prompt"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-
-                    <TextView
-                        android:id="@+id/textView11"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Serial No:"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                    <EditText
-                        android:id="@+id/editText4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-
-                    <TextView
-                        android:id="@+id/textView13"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Description:"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-
-                    <EditText
-                        android:id="@+id/editText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textMultiLine" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-
-                    <Button
-                        android:id="@+id/button1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
                         android:layout_weight="1"
-                        android:text="Next" 
-                        android:onClick="onClickRegisterNext"/>
-
+                        android:entries="@array/calibration_array"
+                        android:prompt="@string/calibration_prompt" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent" >
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent"
-                    android:background="@android:color/darker_gray" >
-                </LinearLayout>
-
-           
+                <Button
+                    android:id="@+id/bWrite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickRegisterNext"
+                    android:text="Next" 
+                    android:layout_margin="10dp"/>
             
             </LinearLayout>
+
         </RelativeLayout>
     </ScrollView>
 

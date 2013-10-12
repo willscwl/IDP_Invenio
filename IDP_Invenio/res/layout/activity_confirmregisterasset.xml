@@ -10,7 +10,7 @@
     tools:context=".Ld" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/topbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -22,14 +22,14 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/topbar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
         android:onClick="onClickConfirmOk"
         android:text="OK" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/bWrite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button2"

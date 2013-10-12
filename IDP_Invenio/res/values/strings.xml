@@ -9,12 +9,15 @@
 	<string name="register_asset_title">Register Asset</string>
 	<string name="about">About</string>
 	<string name="loan_asset_title">Loan Asset</string>
-	
-	<string name="warranty_prompt">Warranty</string>
-	<string-array name="warranty_array">
-        <item>0.5</item>
-        <item>1</item>
-        <item>1.5</item>
-        <item>2</item>
+    <string name="error_detected">Tag not detected. Please place phone against NFC tag</string>
+    <string name="ok_writing">Tag written successfully</string>
+    <string name="error_writing">Error during writing. Please place phone against NFC tag</string>
+    <string name="ok_detection">Tag detected: </string>
+    
+	<string name="calibration_prompt">Calibration</string>
+	<string-array name="calibration_array">
+        <item>Yes</item>
+        <item>No</item>
+
     </string-array>
 </resources>

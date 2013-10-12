@@ -9,7 +9,7 @@ package com.invenio.nfc;
 
 public final class R {
     public static final class array {
-        public static final int warranty_array=0x7f060000;
+        public static final int calibration_array=0x7f060000;
     }
     public static final class attr {
     }
@@ -26,74 +26,114 @@ public final class R {
     public static final class drawable {
         public static final int auditicon=0x7f020000;
         public static final int auditicon2=0x7f020001;
-        public static final int button1=0x7f020002;
-        public static final int home=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int invenio=0x7f020005;
-        public static final int loanasset_tiny=0x7f020006;
-        public static final int loanasseticon=0x7f020007;
-        public static final int loanasseticon2=0x7f020008;
-        public static final int maintenaceicon=0x7f020009;
-        public static final int maintenaceicon2=0x7f02000a;
-        public static final int registerasset_actionbar=0x7f02000b;
-        public static final int registerasset_tiny=0x7f02000c;
-        public static final int registerasseticon=0x7f02000d;
-        public static final int registerasseticon2=0x7f02000e;
-        public static final int scan=0x7f02000f;
-        public static final int updateasseticon=0x7f020010;
-        public static final int updateasseticon2=0x7f020011;
+        public static final int back=0x7f020002;
+        public static final int button1=0x7f020003;
+        public static final int home=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int invenio=0x7f020006;
+        public static final int loanasset_tiny=0x7f020007;
+        public static final int loanasseticon=0x7f020008;
+        public static final int loanasseticon2=0x7f020009;
+        public static final int maintenaceicon=0x7f02000a;
+        public static final int maintenaceicon2=0x7f02000b;
+        public static final int registerasset_actionbar=0x7f02000c;
+        public static final int registerasset_tiny=0x7f02000d;
+        public static final int registerasseticon=0x7f02000e;
+        public static final int registerasseticon2=0x7f02000f;
+        public static final int scan=0x7f020010;
+        public static final int updateasseticon=0x7f020011;
+        public static final int updateasseticon2=0x7f020012;
     }
     public static final class id {
-        public static final int Button01=0x7f090015;
+        public static final int Button01=0x7f090021;
+        public static final int EditText07=0x7f09001a;
         public static final int TextView01=0x7f090001;
-        public static final int action_settings=0x7f09001c;
-        public static final int alert_list=0x7f090019;
+        public static final int alert_list=0x7f090025;
+        public static final int aloc=0x7f090017;
         public static final int assetId=0x7f090010;
-        public static final int button1=0x7f090003;
+        public static final int bWrite=0x7f090003;
+        public static final int btn_login=0x7f090037;
+        public static final int button=0x7f09002e;
         public static final int button2=0x7f090002;
+        public static final int ci=0x7f090029;
         public static final int editText2=0x7f090007;
         public static final int editText3=0x7f090009;
         public static final int editText4=0x7f09000c;
         public static final int editText5=0x7f09000e;
-        public static final int imageButton1=0x7f090014;
-        public static final int imageButton2=0x7f090013;
-        public static final int imageView1=0x7f090016;
-        public static final int imgLogo=0x7f090017;
-        public static final int linearLayout1=0x7f090018;
+        public static final int edit_message=0x7f09002d;
+        public static final int et_pw=0x7f090036;
+        public static final int et_un=0x7f090034;
+        public static final int hd=0x7f09001b;
+        public static final int imageButton1=0x7f090015;
+        public static final int imageButton4=0x7f090014;
+        public static final int imageView1=0x7f090023;
+        public static final int imgLogo=0x7f090024;
+        public static final int ina=0x7f09001d;
+        public static final int lcd=0x7f09002c;
+        public static final int linearLayout1=0x7f090013;
+        public static final int linearone=0x7f090022;
+        public static final int liu=0x7f09002a;
+        public static final int liut=0x7f09002b;
+        public static final int llist=0x7f090039;
         public static final int loginButton=0x7f090012;
-        public static final int menu_about=0x7f09001b;
-        public static final int menu_main=0x7f09001a;
+        public static final int menu_about=0x7f090030;
+        public static final int menu_logout=0x7f090031;
+        public static final int menu_main=0x7f09002f;
+        public static final int mn=0x7f09001c;
+        public static final int mod=0x7f090027;
+        public static final int msn=0x7f09001e;
+        public static final int pager=0x7f090020;
         public static final int password=0x7f090011;
+        public static final int pic=0x7f090028;
+        public static final int re=0x7f090019;
+        public static final int rem=0x7f09001f;
         public static final int scrollView1=0x7f090004;
         public static final int spinner1=0x7f09000a;
-        public static final int textView1=0x7f090000;
+        public static final int text=0x7f090032;
+        public static final int textView1=0x7f090016;
         public static final int textView11=0x7f09000b;
         public static final int textView13=0x7f09000d;
         public static final int textView2=0x7f090005;
         public static final int textView3=0x7f090006;
         public static final int textView5=0x7f090008;
+        public static final int tid=0x7f090026;
+        public static final int topbar=0x7f090000;
+        public static final int tp=0x7f090018;
+        public static final int tv_error=0x7f090038;
+        public static final int tv_pw=0x7f090035;
+        public static final int tv_un=0x7f090033;
         public static final int username=0x7f09000f;
     }
     public static final class layout {
         public static final int activity_about=0x7f030000;
         public static final int activity_confirmregisterasset=0x7f030001;
         public static final int activity_loanee=0x7f030002;
-        public static final int activity_loansubmenu=0x7f030003;
-        public static final int activity_main=0x7f030004;
-        public static final int activity_mainmenu=0x7f030005;
-        public static final int activity_registerasset=0x7f030006;
-        public static final int activity_registersuccess=0x7f030007;
-        public static final int activity_scan=0x7f030008;
-        public static final int activity_scanloan=0x7f030009;
-        public static final int activity_splash=0x7f03000a;
-        public static final int alert=0x7f03000b;
-        public static final int audit_style=0x7f03000c;
-        public static final int custom_listview=0x7f03000d;
-        public static final int loanasset_style=0x7f03000e;
-        public static final int maintenance_style=0x7f03000f;
-        public static final int menu=0x7f030010;
-        public static final int registerasset_style=0x7f030011;
-        public static final int updateasset_style=0x7f030012;
+        public static final int activity_loanhistory=0x7f030003;
+        public static final int activity_loansubmenu=0x7f030004;
+        public static final int activity_main=0x7f030005;
+        public static final int activity_mainmenu=0x7f030006;
+        public static final int activity_registerasset=0x7f030007;
+        public static final int activity_registermain=0x7f030008;
+        public static final int activity_registersuccess=0x7f030009;
+        public static final int activity_scan=0x7f03000a;
+        public static final int activity_scan_write=0x7f03000b;
+        public static final int activity_scanloan=0x7f03000c;
+        public static final int activity_splash=0x7f03000d;
+        public static final int alert=0x7f03000e;
+        public static final int audit_style=0x7f03000f;
+        public static final int custom_listview=0x7f030010;
+        public static final int fragment_register_basic_info=0x7f030011;
+        public static final int fragment_register_contact_info=0x7f030012;
+        public static final int fragment_register_detailed_info=0x7f030013;
+        public static final int loanasset_style=0x7f030014;
+        public static final int maintenance_style=0x7f030015;
+        public static final int mainy=0x7f030016;
+        public static final int menu=0x7f030017;
+        public static final int registerasset_style=0x7f030018;
+        public static final int tag_divider=0x7f030019;
+        public static final int tag_text=0x7f03001a;
+        public static final int test=0x7f03001b;
+        public static final int updateasset_style=0x7f03001c;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -102,12 +142,16 @@ public final class R {
         public static final int about=0x7f050006;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        public static final int calibration_prompt=0x7f05000c;
+        public static final int error_detected=0x7f050008;
+        public static final int error_writing=0x7f05000a;
         public static final int hello_world=0x7f050002;
         public static final int home_page_name=0x7f050003;
         public static final int loan_asset_title=0x7f050007;
         public static final int login_success=0x7f050004;
+        public static final int ok_detection=0x7f05000b;
+        public static final int ok_writing=0x7f050009;
         public static final int register_asset_title=0x7f050005;
-        public static final int warranty_prompt=0x7f050008;
     }
     public static final class style {
         /** 

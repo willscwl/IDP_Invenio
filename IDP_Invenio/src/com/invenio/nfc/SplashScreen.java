@@ -1,12 +1,19 @@
 package com.invenio.nfc;
+
+import com.invenio.nfc.login.LoginActivity;
+
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.os.Handler;
+import android.provider.Settings;
 
 public class SplashScreen extends Activity{
 	 
-	 
+	
 	    // Splash screen timer
 	    private static int SPLASH_TIME_OUT = 1000;
 	 
@@ -33,6 +40,13 @@ public class SplashScreen extends Activity{
 	                finish();
 	            }
 	        }, SPLASH_TIME_OUT);
+	        
+	       
+	        
 	    }
-	 
+	    
+	    
+	    
+	    
+	    
 	}

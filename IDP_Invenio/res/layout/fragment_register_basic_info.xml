@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+     >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/tid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Tagging ID"
+                    android:textColor="#6495ED"
+                    android:maxLength="4" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/mn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Manufacturer Name"
+                    android:textColor="#6495ED"
+                    android:maxLength="15" >
+                    
+                </EditText>
+
+                <EditText
+                    android:id="@+id/mod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Model"
+                    android:textColor="#6495ED" 
+                    android:maxLength="15"/>
+
+                <EditText
+                    android:id="@+id/msn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Manufacturer S/N"
+                    android:textColor="#6495ED" 
+                    android:maxLength="20"/>
+
+                <EditText
+                    android:id="@+id/ina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Internal Asset ID"
+                    android:textColor="#6495ED" 
+                    android:maxLength="15"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                </LinearLayout>
+                
+                <!-- Footer aligned to bottom -->
+                
+            </LinearLayout>
+
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

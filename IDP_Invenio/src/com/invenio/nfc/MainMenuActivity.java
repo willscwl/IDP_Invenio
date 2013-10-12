@@ -16,7 +16,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.invenio.nfc.LoanItemLogic;
+import com.invenio.nfc.loanasset.LoanItemLogic;
 
 public class MainMenuActivity extends Activity {
 	private NfcAdapter mAdapter;
@@ -42,7 +42,7 @@ public class MainMenuActivity extends Activity {
 	
 	public void onClickRegisterAsset(View v){
 		try{
-			Class ourClass = Class.forName("com.invenio.nfc.RegisterAssetActivity");
+			Class ourClass = Class.forName("com.invenio.nfc.registerasset.RegisterAssetActivity");
 			Intent ourIntent = new Intent(MainMenuActivity.this, ourClass);
 			startActivity(ourIntent);
 		}catch(Exception e){
@@ -53,7 +53,7 @@ public class MainMenuActivity extends Activity {
 	public void onClickLoanAsset(View v){
 		try{
 			LoanItemLogic.clearListItems();
-			Class ourClass = Class.forName("com.invenio.nfc.LoanSubMenuActivity");
+			Class ourClass = Class.forName("com.invenio.nfc.loanasset.LoanMultipleItemsActivity");
 			Intent ourIntent = new Intent(MainMenuActivity.this, ourClass);
 			startActivity(ourIntent);
 			
