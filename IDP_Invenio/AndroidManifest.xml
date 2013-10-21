@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.invenio.nfc"
-    android:versionCode="5"
-    android:versionName="5" >
+    android:versionCode="6"
+    android:versionName="6" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.NFC" />
 
     <uses-feature android:name="android.hardware.nfc" />
-f
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -81,7 +81,8 @@ f
             android:name="com.invenio.nfc.registerasset.RegisterAssetActivity"
             android:icon="@drawable/registerasset_tiny"
             android:label="@string/register_asset_title"
-            android:theme="@android:style/Theme.Holo" >
+            android:theme="@android:style/Theme.Holo" 
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.REGISTERASSETACTIVITY" />
 
@@ -276,6 +277,19 @@ f
             android:theme="@android:style/Theme.Holo" >
             <intent-filter>
                 <action android:name="android.intent.action.SCANLOANWRITEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <!-- DateTimePicker-->
+        <activity
+            android:name="com.invenio.nfc.registerasset.DateTimePicker"
+            android:icon="@drawable/loanasset_tiny"
+            android:label="Loan History"
+            android:theme="@android:style/Theme.Holo" >
+            <intent-filter>
+                <action android:name="android.intent.action.DATETIMEPICKER" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

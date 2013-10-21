@@ -122,7 +122,10 @@ public class LoginActivity extends Activity {
 				 * } catch (ClassNotFoundException e) { // TODO Auto-generated catch
 				 * block e.printStackTrace(); }
 				 */
-			}	
+			}else{
+				Toast.makeText(LoginActivity.this, "Invalid username/password!", 3000)
+				.show();
+			}
 
 		}
 	}

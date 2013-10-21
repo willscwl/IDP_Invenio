@@ -62,6 +62,18 @@ public class MainMenuActivity extends Activity {
 		}
 	}
 	
+	public void onClickDateTimePicker(View v){
+		try{
+			LoanItemLogic.clearListItems();
+			Class ourClass = Class.forName("com.invenio.nfc.registerasset.DateTimePicker");
+			Intent ourIntent = new Intent(MainMenuActivity.this, ourClass);
+			startActivity(ourIntent);
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater menuInflater = getMenuInflater();

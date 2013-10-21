@@ -86,7 +86,8 @@
                     android:ems="10"
                     android:hint="Last Calibration Date"
                     android:textColor="#6495ED" 
-                    android:maxLength="8"/>
+                    android:maxLength="8"
+                    android:focusableInTouchMode="false"/>
 
                 <Button
                     android:id="@+id/bWrite"
