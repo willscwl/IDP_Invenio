@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -37,7 +38,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 public class TagLogic {
-	static HashMap<String, String> tagInfoMap = new HashMap<String, String>();;
+	static LinkedHashMap<String, String> tagInfoMap = new LinkedHashMap<String, String>();;
 	public static String formattedTagInfo;
 	public static String loaneeName;
 	public static String retrievedTagInfo;

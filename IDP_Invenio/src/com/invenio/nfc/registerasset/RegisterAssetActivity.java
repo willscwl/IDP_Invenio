@@ -61,7 +61,7 @@ public class RegisterAssetActivity extends FragmentActivity implements
 	private EditText liut;
 	private boolean lcdSelected;
 	private boolean topSelected;
-	
+
 	static final int DATE_DIALOG_ID = 0;
 	static final int TIME_DIALOG_ID = 1;
 	// variables to save user selected date and time
@@ -109,11 +109,11 @@ public class RegisterAssetActivity extends FragmentActivity implements
 		viewPager = (ViewPager) findViewById(R.id.pager);
 		actionBar = getActionBar();
 		mAdapter = new TabsPagerAdapter(getSupportFragmentManager());
-		
+
 		viewPager.setAdapter(mAdapter);
 		actionBar.setHomeButtonEnabled(false);
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-		
+
 		// Adding Tabs
 		for (String tab_name : tabs) {
 			actionBar.addTab(actionBar.newTab().setText(tab_name)
@@ -147,13 +147,13 @@ public class RegisterAssetActivity extends FragmentActivity implements
 					liu = (EditText) findViewById(R.id.liu);
 					liut = (EditText) findViewById(R.id.liut);
 					lcd = (EditText) findViewById(R.id.lcd);
-					
+
 					SimpleDateFormat s = new SimpleDateFormat("yyyyMMddhhmm");
 					liut.setText(s.format(new Date()));
-					
+
 					lcd.setClickable(true);
 					lcd.setOnClickListener(new View.OnClickListener() {
-						
+
 						public void onClick(View v) {
 							// Show the DatePickerDialog
 							topSelected = false;
@@ -161,37 +161,36 @@ public class RegisterAssetActivity extends FragmentActivity implements
 							showDialog(DATE_DIALOG_ID);
 						}
 					});
-					
+
 					timeOfPur.setClickable(true);
 					timeOfPur.setOnClickListener(new View.OnClickListener() {
-						
+
 						public void onClick(View v) {
 							// Show the DatePickerDialog
-							
+
 							lcdSelected = false;
 							topSelected = true;
 							showDialog(DATE_DIALOG_ID);
 						}
 					});
-					
-					
+
 					Asset.equipmentTagID = equipmentTagId.getText().toString();
-					/*Asset.manufacturerName = manuName.getText().toString();
-					Asset.modelNo = model.getText().toString();
-					Asset.manufacturerSerialNo = manuSerial.getText()
-							.toString();
-					Asset.internalID = internalId.getText().toString();
-					Asset.location = loc.getText().toString();
-					Asset.timeOfPurchase = timeOfPur.getText().toString();
-					Asset.relatedEquipment = rEquip.getText().toString();
-					Asset.hardwareDesc = hd.getText().toString();
-					Asset.remarks = rem.getText().toString();
-					Asset.personInCharge = pic.getText().toString();
-					Asset.contactInfo = ci.getText().toString();
-					Asset.lastUserUpdate = liu.getText().toString();
-					Asset.lastUpdateTimeStamp = liut.getText().toString();
-					Asset.lastCalibrationDate = lcd.getText().toString();
-*/
+					
+					  Asset.manufacturerName = manuName.getText().toString();
+					  Asset.modelNo = model.getText().toString();
+					  Asset.manufacturerSerialNo = manuSerial.getText().toString(); Asset.internalID =
+					  internalId.getText().toString(); Asset.location =
+					  loc.getText().toString(); Asset.timeOfPurchase =
+					  timeOfPur.getText().toString(); Asset.relatedEquipment =
+					  rEquip.getText().toString(); Asset.hardwareDesc =
+					  hd.getText().toString(); Asset.remarks =
+					  rem.getText().toString(); Asset.personInCharge =
+					  pic.getText().toString(); Asset.contactInfo =
+					  ci.getText().toString(); Asset.lastUserUpdate =
+					  liu.getText().toString(); Asset.lastUpdateTimeStamp =
+					  liut.getText().toString(); Asset.lastCalibrationDate =
+					  lcd.getText().toString();
+					 
 					// convert to JSON
 					// String json = {"equipmentTagId":equipmentTagId,"m":"WP"};
 
@@ -285,17 +284,16 @@ public class RegisterAssetActivity extends FragmentActivity implements
 		boolean proceed = false;
 		try {
 
-			if (!(Asset.equipmentTagID).trim().equals("")) {
-				/*
-				 * && Asset.manufacturerName != "" } && Asset.modelNo != "" &&
-				 * Asset.manufacturerSerialNo != "" && Asset.internalID != "" &&
-				 * Asset.location != "" && Asset.timeOfPurchase != "" &&
-				 * Asset.relatedEquipment != "" && Asset.hardwareDesc != "" &&
-				 * Asset.remarks != "" && Asset.personInCharge != "" &&
-				 * Asset.contactInfo != "" && Asset.lastUserUpdate != "" &&
-				 * Asset.lastUpdateTimeStamp != "" && Asset.lastCalibrationDate
-				 * != "")
-				 */
+			if (!(Asset.equipmentTagID).trim().equals("")
+					&& Asset.manufacturerName != "" && Asset.modelNo != ""
+					&& Asset.manufacturerSerialNo != ""
+					&& Asset.internalID != "" && Asset.location != ""
+					&& Asset.timeOfPurchase != ""
+					&& Asset.relatedEquipment != "" && Asset.hardwareDesc != ""
+					&& Asset.remarks != "" && Asset.personInCharge != ""
+					&& Asset.contactInfo != "" && Asset.lastUserUpdate != ""
+					&& Asset.lastUpdateTimeStamp != ""
+					&& Asset.lastCalibrationDate != "") {
 
 				// Toast.makeText(this, Asset.equipmentTagID, 3000).show();
 				// ------------------- Store info into proper format for writing
@@ -307,6 +305,7 @@ public class RegisterAssetActivity extends FragmentActivity implements
 				TagLogic.putIn("Manufacturer Name", Asset.manufacturerName);
 				TagLogic.putIn("Model No", Asset.modelNo);
 				TagLogic.putIn("Loanee", "");
+				
 				// TagLogic.putIn("Hardware Description", Asset.hardwareDesc);
 				// TagLogic.putIn("Manufacturer S/N",
 				// Asset.manufacturerSerialNo);
@@ -324,6 +323,7 @@ public class RegisterAssetActivity extends FragmentActivity implements
 				// Asset.lastCalibrationDate);
 
 				TagLogic.formatTagInfo();
+				System.out.println("Tag info: " + TagLogic.formattedTagInfo);
 				// System.out.println(TagLogic.formattedTagInfo);
 				// -----------------------------------------------------------------------------------
 
@@ -363,43 +363,42 @@ public class RegisterAssetActivity extends FragmentActivity implements
 
 		// return;
 	}
-	
+
 	// Register DatePickerDialog listener
-		private DatePickerDialog.OnDateSetListener mDateSetListener = new DatePickerDialog.OnDateSetListener() {
-			// the callback received when the user "sets" the Date in the
-			// DatePickerDialog
-			public void onDateSet(DatePicker view, int yearSelected,
-					int monthOfYear, int dayOfMonth) {
-				year = yearSelected;
-				month = monthOfYear + 1;
-				day = dayOfMonth;
-				
-				//if timeOfPur is selected
-				if(topSelected){
-					// Set the Selected Date in Select date Button
-					if(String.valueOf(month).length()==1){
-						timeOfPur.setText(year+ "0" + month);
-					}else{
-						timeOfPur.setText(year+ "" + month);
-					}
-				}else{
-					if(String.valueOf(month).length()==1){
-						lcd.setText(year+ "0" + month + "" + day);
-					}else{
-						lcd.setText(year+ "" + month + "" + day);
-					}
+	private DatePickerDialog.OnDateSetListener mDateSetListener = new DatePickerDialog.OnDateSetListener() {
+		// the callback received when the user "sets" the Date in the
+		// DatePickerDialog
+		public void onDateSet(DatePicker view, int yearSelected,
+				int monthOfYear, int dayOfMonth) {
+			year = yearSelected;
+			month = monthOfYear + 1;
+			day = dayOfMonth;
+
+			// if timeOfPur is selected
+			if (topSelected) {
+				// Set the Selected Date in Select date Button
+				if (String.valueOf(month).length() == 1) {
+					timeOfPur.setText(year + "0" + month);
+				} else {
+					timeOfPur.setText(year + "" + month);
 				}
-				
+			} else {
+				if (String.valueOf(month).length() == 1) {
+					lcd.setText(year + "0" + month + "" + day);
+				} else {
+					lcd.setText(year + "" + month + "" + day);
+				}
 			}
-		};
-		
-		// Method automatically gets Called when you call showDialog() method
-		@Override
-		protected Dialog onCreateDialog(int id) {
-				// create a new DatePickerDialog with values you want to show
-				return new DatePickerDialog(this, mDateSetListener, mYear, mMonth,
-						mDay);
-				// create a new TimePickerDialog with values you want to show
+
 		}
+	};
+
+	// Method automatically gets Called when you call showDialog() method
+	@Override
+	protected Dialog onCreateDialog(int id) {
+		// create a new DatePickerDialog with values you want to show
+		return new DatePickerDialog(this, mDateSetListener, mYear, mMonth, mDay);
+		// create a new TimePickerDialog with values you want to show
+	}
 
 }
