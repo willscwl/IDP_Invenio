@@ -51,7 +51,7 @@
                     android:hint="Time of Purchase"
                     android:textColor="#6495ED"
                     android:maxLength="6" 
-                    />
+                    android:focusableInTouchMode="false"/>
 
                 <EditText
                     android:id="@+id/re"

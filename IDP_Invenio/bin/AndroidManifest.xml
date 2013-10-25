@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.invenio.nfc"
-    android:versionCode="7"
+    android:versionCode="9"
     android:versionName="1.2" >
 
     <uses-sdk
@@ -9,7 +9,7 @@
         android:targetSdkVersion="17" />
 
     <uses-permission android:name="android.permission.NFC" />
-
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-feature android:name="android.hardware.nfc" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -53,7 +53,7 @@
         <!-- About -->
         <activity
             android:name="com.invenio.nfc.AboutActivity"
-            android:label="@string/about"
+            android:label="FAQs"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo" >
             <intent-filter>

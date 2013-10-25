@@ -62,9 +62,9 @@
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="Last Info Update"
-                    android:textColor="#6495ED" 
-                    android:maxLength="20"/>
+                    android:hint="Last Updated By Which User?"
+                    android:maxLength="20"
+                    android:textColor="#6495ED" />
 
                 <EditText
                     android:id="@+id/liut"
@@ -75,7 +75,8 @@
                     android:ems="10"
                     android:hint="Last Info Update TimeStamp"
                     android:textColor="#6495ED" 
-                    android:maxLength="12"/>
+                    android:maxLength="12"
+                    android:focusableInTouchMode="false"/>
 
                 <EditText
                     android:id="@+id/lcd"

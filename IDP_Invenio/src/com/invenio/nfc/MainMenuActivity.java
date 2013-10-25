@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.invenio.nfc.loanasset.LoanItemLogic;
+import com.invenio.nfc.registerasset.TimeLapse;
 
 public class MainMenuActivity extends Activity {
 	private NfcAdapter mAdapter;
@@ -45,6 +46,10 @@ public class MainMenuActivity extends Activity {
 			Class ourClass = Class.forName("com.invenio.nfc.registerasset.RegisterAssetActivity");
 			Intent ourIntent = new Intent(MainMenuActivity.this, ourClass);
 			startActivity(ourIntent);
+			
+			//------ GOOGLE DOC------
+			TimeLapse.startTimer();
+			
 		}catch(Exception e){
 			e.printStackTrace();
 		}

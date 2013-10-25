@@ -22,9 +22,9 @@ public class AboutActivity extends Activity {
 		try {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.activity_about);
-			TextView wikiLink = (TextView) findViewById(R.id.TextView01);
-			wikiLink.setText(Html.fromHtml("<a href=\"https://wiki.smu.edu.sg/is306/2013-14_Term_1_G1_Invenio_A5_Flow_Diagram\">Invenio Wiki Page</a> "));
-			wikiLink.setMovementMethod(LinkMovementMethod.getInstance());
+			//TextView wikiLink = (TextView) findViewById(R.id.TextView01);
+			//wikiLink.setText(Html.fromHtml("<a href=\"https://wiki.smu.edu.sg/is306/2013-14_Term_1_G1_Invenio_A5_Flow_Diagram\">Invenio Wiki Page</a> "));
+			//wikiLink.setMovementMethod(LinkMovementMethod.getInstance());
 			getActionBar().setDisplayHomeAsUpEnabled(true);
 		} catch (Exception e) {
 			e.printStackTrace();
